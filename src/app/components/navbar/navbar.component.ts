@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { faPerson } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-navbar',
@@ -7,8 +8,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   @Input() title: string = 'My App';
+  faPerson = faPerson
 
-  titleNavbar: string = 'Porfolio Navbar'
   constructor() { }
 
   ngOnInit(): void {

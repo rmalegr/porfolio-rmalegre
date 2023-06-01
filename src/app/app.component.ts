@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title1 = 'porfolio Component Padre';
+  title1 = 'Portfolio Website';
+  loading: boolean = true
+
+  constructor() {
+
+  }
+  loadSpinner() {
+    setTimeout(() => {
+      this.loading = false
+    }, 3000);
+  }
+
 }
